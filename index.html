@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVIL Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <h1 class="logo">
+                <span class="evil">EVIL</span> Search
+            </h1>
+            <p class="tagline">Where good intentions go to die...</p>
+
+            <div class="search-tabs">
+                <button class="tab-button active" data-tab="web">Web</button>
+                <button class="tab-button" data-tab="images">Images</button>
+            </div>
+
+            <form id="search-form">
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Search the depths of the internet..."
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" id="search-button">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Summoning results from the dark web...</p>
+        </div>
+
+        <div id="results" class="results"></div>
+
+        <div id="error" class="error" style="display: none;"></div>
+    </div>
+
+    <footer>
+        <p>Powered by AI • For educational purposes only • Be EVIL responsibly</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
